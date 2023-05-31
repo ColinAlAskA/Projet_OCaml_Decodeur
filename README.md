@@ -14,9 +14,18 @@ Le dossier exemple_msg contient des fichiers en .msg (.txt) pour tester le proje
 
 Le dossier continent aussi le rapport en pdf.
 
- - Pour compiler : ocamlc -o exec projet.ml
- - Pour tester le décodage (exemple) : ./exec 2 ./Exemples/exemples_prog/bordel.prog 
- - Pour tester l'encodage (exemple) : ./exec 3 ./Exemples/exemples_msg/lalaoublablabla.msg 
+ - Pour compiler : 
+```bash
+ocamlc -o exec projet.ml
+```
+ - Pour tester le décodage (exemple) :
+```bash
+./exec 2 ./Exemples/exemples_prog/bordel.prog 
+```
+ - Pour tester l'encodage (exemple) : 
+```bash
+./exec 3 ./Exemples/exemples_msg/lalaoublablabla.msg 
+```
 
 
 # Contenu et détails du projet
