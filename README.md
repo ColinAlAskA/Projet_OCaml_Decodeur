@@ -1,6 +1,26 @@
 # Projet_OCaml_Decodeur
 Projet final de l'unité d'enseignement de programmation fonctionnelle durant ma première année à l'ENSIIE. 
 
+Note reçue pour le projet : 19.5/20
+
+## Pour lancer le décodeur/encodeur
+
+Le fichier projet.ml comprend toutes les fonctions demandées du projet et la dernière version de la fonction generate_program
+
+Le fichier tests.ml comprend quelques tests sur les différents prototypes des fonctions generate_program. J'aurais aimé rajouter des tests unitaires à toutes mes fonctions, mais je n'ai pas pu par manque de temps...
+
+Le dossier exemple_prog contient des fichiers en .prog pour tester le projet en phase 1 et 2.
+Le dossier exemple_msg contient des fichiers en .msg (.txt) pour tester le projet en phase 3.
+
+Le dossier continent aussi le rapport en pdf.
+
+ - Pour compiler : ocamlc -o exec projet.ml
+ - Pour tester le décodage (exemple) : ./exec 2 ./Exemples/exemples_prog/bordel.prog 
+ - Pour tester l'encodage (exemple) : ./exec 3 ./Exemples/exemples_msg/lalaoublablabla.msg 
+
+
+# Contenu et détails du projet
+
 L'objectif de ce projet était de créer un petit décodeur de "langage extraterrestre" en OCaml, et par la suite construire le procédé inverse.
 Il était dit explicitement dans le sujet : "Afin de décoder cette communication, il est du ressort de la terre de fournir un ruban infini et de mettre au point une machine permettant d’exécuter les instructions en fonction de leur sémantique afin d’écrire le message sur le ruban."
 
@@ -38,19 +58,3 @@ F(2,[W(l);R;W(a);R;]);W( );R;W(o);R;W(u);R;W( );R;F(3,[W(b);R;W(l);R;W(a);R;]);
 ```
 
 Le gros du travail est dans la fonction "generate_program". Son implémentation, ainsi que sa complexité, sont largement développées dans le rapport pdf.
-
-
-Note reçue pour le projet : 19.5/20
-
-Le fichier projet.ml comprend toutes les fonctions demandées du projet et la dernière version de la fonction generate_program
-
-Le fichier tests.ml comprend quelques tests sur les différents prototypes des fonctions generate_program. J'aurais aimé rajouter des tests unitaires à toutes mes fonctions, mais je n'ai pas pu par manque de temps...
-
-Le dossier exemple_prog contient des fichiers en .prog pour tester le projet en phase 1 et 2.
-Le dossier exemple_msg contient des fichiers en .msg (.txt) pour tester le projet en phase 3.
-
-Le dossier continent aussi le rapport en pdf.
-
- - Pour compiler : ocamlc -o exec projet.ml
- - Pour tester le décodage (exemple) : ./exec 2 ./Exemples/exemples_prog/bordel.prog 
- - Pour tester l'encodage (exemple) : ./exec 3 ./Exemples/exemples_msg/lalaoublablabla.msg 
