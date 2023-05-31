@@ -1,0 +1,2 @@
+#affiche "hello"
+W(a);W(h);R;W(e);R;F(2,[W(l);R]);W(o);

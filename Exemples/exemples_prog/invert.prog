@@ -1,0 +1,8 @@
+W(a);R;W(b);# a ce point le ruban contient ab et le curseur est sur b
+I;# inverse le comportement de R et L
+R;# le curseur bouge a gauche est est donc sur a
+R;# nouveau caractère blanc a gauche de a
+W(1);#ruban = 1ab
+I;#on reinverse donc les commandes L et R reprennent leurs comportements normal
+F(3,[R]);
+W(d); #affiche 1abd
